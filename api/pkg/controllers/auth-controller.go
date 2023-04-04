@@ -4,15 +4,14 @@ import (
 	"api/pkg/models"
 	"api/pkg/utils"
 	"encoding/json"
-	"github.com/golang-jwt/jwt/v4"
-	"github.com/google/uuid"
-	"golang.org/x/crypto/bcrypt"
 	"net/http"
 	"os"
 	"time"
-)
 
-var NewUser models.User
+	"github.com/golang-jwt/jwt/v4"
+	"github.com/google/uuid"
+	"golang.org/x/crypto/bcrypt"
+)
 
 var secret = os.Getenv("JWT_SECRET")
 
